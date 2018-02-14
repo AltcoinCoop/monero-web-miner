@@ -23,7 +23,7 @@ class Application(tornado.web.Application):
         super(Application, self).__init__(self._handlers, **kwargs)
 
 def main():
-    define('port', default=80, help='Runs the webserver on any given port.', type=int)
+    define('port', default=8000, help='Runs the webserver on any given port.', type=int)
 
     tornado.options.parse_command_line()
 
